@@ -19,6 +19,10 @@
 
   <!--your styles-->
   <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 </head>
 
 <body>
@@ -28,8 +32,8 @@
         <h1>MMM</h1>
         <a href="#"><img src="img/svgs/logo.svg" /></a>
         <ul id="nav">
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Sign up</a></li>
+          <li><a href="#how_it_works">How it works</a></li>
+          <li><a href="#sign_up_cta">Sign up</a></li>
         </ul>
       </div>
     </div>
@@ -42,13 +46,13 @@
           <div id="hero_copy">
             <h2>Don't stress when you dress.<br />Get our app.</h2>
             <p>With our help you can become the "you" you want to be.</p>
+            <button data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class="far fa-play-circle"></i>Watch our video</button>
           </div>
           <div class="appstores">
             <a href="#"><img src="img/svgs/appstore.svg" /></a>
             <a href="#"><img src="img/svgs/gplay.svg" /></a>
           </div>
         </div>
-        <!-- <div class="column six" id="hero_right"></div> -->
       </div>
     </div>
   </div>
@@ -185,6 +189,18 @@
       <li><a><i class="fab fa-instagram"></i></a></li>
     </ul>
   </div>
+
+  <script>
+    $('a[href^="#"]').on('click', function (event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
+  </script>
 </body>
 
 </html>

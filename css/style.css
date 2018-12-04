@@ -1,34 +1,47 @@
 @charset "UTF-8";
 
 /* Temporary width of all images so they aren't huge */
-img { width: 100%; height: auto; }
-.card img {
-
+img {
+  width: 100%;
+  height: auto;
 }
 
 /* Temporary background colors to help visualize where each section starts and ends */
 /* #header { background: powderblue; } */
 /* #hero { background: lightblue; } */
-#our_styles { background: lightskyblue; }
+#our_styles {
+  background: lightskyblue;
+}
+
 /* #how_it_works { background: lightsteelblue; } */
 /* #our_brands { background: cornflowerblue; } */
 /* #testimonials { background: lightskyblue; } */
-#sign_up_cta { background: lightblue; }
+#sign_up_cta {
+  background: lightblue;
+}
+
 /* #footer { background: powderblue; } */
 
 /* Setting the font for the whole site here */
-body { font-family: eb-garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif; }
+body {
+  font-family: eb-garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+}
 
 /* ///////////////////////////////////////////////////////// */
 /* NAVIGATION */
 
-#header { height: 0; }
+#header {
+  height: 0;
+}
 
-#navbar h1 { display: none; }
+#navbar h1 {
+  display: none;
+}
 
 #navbar img {
   padding: 20px;
-  max-width: 150px;
+  padding-left: 1rem;
+  width: 150px;
 }
 
 #navbar {
@@ -52,16 +65,18 @@ body { font-family: eb-garamond, Baskerville, Baskerville Old Face, Hoefler Text
   letter-spacing: .5px;
   color: white;
   /* border-bottom: 2px solid white; */
-  transition: all .22s ease;
+  transition: all .10s ease;
 }
 
 #nav a:hover {
-  color: rgba(37,55,103,1);
-  border-bottom: 2px solid 	rgba(37,55,103,1);
+  color: rgba(37, 55, 103, 1);
+  border-bottom: 2px solid rgba(37, 55, 103, 1);
   transform: translateY(-2px);
 }
 
-#nav li:not(:last-child) { padding-right: 2rem; }
+#nav li:not(:last-child) {
+  padding-right: 2rem;
+}
 
 /* END NAVIGATION */
 /* ///////////////////////////////////////////////////////// */
@@ -88,17 +103,19 @@ body { font-family: eb-garamond, Baskerville, Baskerville Old Face, Hoefler Text
   color: black;
   cursor: pointer;
 }
+
 #footer a:hover {
-  color: rgba(37,55,103,1);
+  color: rgba(37, 55, 103, 1);
 }
+
 #footer .appstores {
   margin-bottom: 4rem;
 }
 
 #hero {
-  background: 
-    rgba(37,55,103,.25);
-    /* linear-gradient(
+  background:
+    rgba(37, 55, 103, .25);
+  /* linear-gradient(
       to bottom,
       rgba(37,55,103,0),
       rgba(37,55,103,1) 30%); */
@@ -108,29 +125,41 @@ body { font-family: eb-garamond, Baskerville, Baskerville Old Face, Hoefler Text
   padding-top: 20rem;
 }
 
-#hero img, #footer img { max-width: 150px; }
+#hero img,
+#footer img {
+  max-width: 150px;
+}
 
 #hero_left {
   flex-direction: column;
   justify-content: center;
 }
 
-#hero_copy { 
+#hero_copy {
   margin-bottom: 8rem;
   color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
+
+#hero button {
+width: 225px;
+}
+
 #featurethis {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#featurethis p{
-	font-size: 25px;
-    margin-top: 2rem;
-	
-	
+
+#featurethis p {
+  font-size: 25px;
+  margin-top: 2rem;
+
+
 }
-#hero_copy h2, #sign_up_cta h2 {
+
+#hero_copy h2,
+#sign_up_cta h2 {
   font-size: 5rem;
   line-height: 1;
   margin-bottom: 2rem;
@@ -139,11 +168,16 @@ body { font-family: eb-garamond, Baskerville, Baskerville Old Face, Hoefler Text
 #hero_copy p {
   font-size: 2.5rem;
   font-style: italic;
+  margin-bottom: 2rem;
 }
 
+.appstores {
+  text-align: center;
+}
 
-.appstores { text-align: center; }
-.appstores img { padding: .5rem; }
+.appstores img {
+  padding: .5rem;
+}
 
 .v_space {
   padding-top: 10rem;
@@ -157,7 +191,8 @@ body { font-family: eb-garamond, Baskerville, Baskerville Old Face, Hoefler Text
   flex: 1 1 250px;
   padding: 3rem;
   background: white;
-  border-radius: .5rem;;
+  border-radius: .5rem;
+  ;
   margin: 0 1rem;
   min-height: 400px;
   margin-bottom: 3rem;
@@ -167,26 +202,41 @@ body { font-family: eb-garamond, Baskerville, Baskerville Old Face, Hoefler Text
   max-width: 250px;
 }
 
-#testimonials .card img { max-width: 180px; }
-#testimonials .card:nth-of-type(1) img { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-#testimonials .card:nth-of-type(2) img { border-radius: 63% 37% 51% 49% / 48% 71% 29% 52%; }
-#testimonials .card:nth-of-type(3) img { border-radius: 32% 68% 69% 31% / 28% 49% 51% 72%; }
+#testimonials .card img {
+  max-width: 180px;
+}
+
+#testimonials .card:nth-of-type(1) img {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+#testimonials .card:nth-of-type(2) img {
+  border-radius: 63% 37% 51% 49% / 48% 71% 29% 52%;
+}
+
+#testimonials .card:nth-of-type(3) img {
+  border-radius: 32% 68% 69% 31% / 28% 49% 51% 72%;
+}
 
 .testimonial blockquote {
   border: none;
-  background: none; 
+  background: none;
 }
 
-#sign_up_cta { text-align: center; }
+#sign_up_cta {
+  text-align: center;
+}
 
 #sign_up_cta {
   flex-direction: column;
   justify-content: center;
 }
 
-form { display: flex; }
+form {
+  display: flex;
+}
 
-input { 
+input {
   width: 100%;
   margin-right: 1rem;
   font-size: 2rem;
@@ -194,12 +244,13 @@ input {
   border: none;
   padding-left: 1rem;
 }
+
 button {
   border-radius: .25rem;
   width: 200px;
   height: 4rem;
   border: none;
-  background: rgba(37,55,103,1);
+  background: rgba(37, 55, 103, 1);
   font-size: 1.75rem;
   line-height: 2rem;
   font-weight: 600;
@@ -209,28 +260,43 @@ button {
   color: white;
   cursor: pointer;
 }
+
 button:hover {
-  background: rgba(37,55,103,.75);
+  background: rgb(71, 95, 135);
 }
 
-.testimonial h5, .testimonial h6 { font-family: gill-sans-nova, sans-serif; }
-.testimonial h5 { font-size: 1.5rem; text-transform: uppercase; }
-.testimonial h6 { font-size: 1.4 rem; color: rgba(0,0,0,.5); }
+button i {
+  padding-right: .5rem;
+}
+
+.testimonial h5,
+.testimonial h6 {
+  font-family: gill-sans-nova, sans-serif;
+}
+
+.testimonial h5 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.testimonial h6 {
+  font-size: 1.4 rem;
+  color: rgba(0, 0, 0, .5);
+}
 
 h3 {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 600;
-  /* border-bottom: 1px solid; */
 }
 
 #crap {
-  background: rgba(37,55,103,.15);
+  background: rgba(37, 55, 103, .15);
   background-image: url('../img/alexander-andrews-290794-unsplash.jpg');
   background-blend-mode: overlay;
   background-size: cover;
-	background-position: top;
+  background-position: top;
   color: white;
   justify-content: center;
   font-style: italic;
@@ -245,12 +311,14 @@ h4 {
   font-size: 2rem;
   font-weight: 700;
 }
-#fadiman img{
-	width: 70%;
-	
+
+#fadiman img {
+  width: 70%;
+
 }
 
-#how_it_works, #testimonials {
+#how_it_works,
+#testimonials {
   text-align: center;
 }
 
@@ -259,11 +327,13 @@ h4 {
 }
 
 #how_it_works .card {
-  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
-  0 5px 15px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
 }
 
-#how_it_works h3, #testimonials h3, #features h3 {
+#how_it_works h3,
+#testimonials h3,
+#features h3 {
   display: inline-block;
   border-bottom: 3px solid #253767;
   margin-top: -3rem;
@@ -283,26 +353,21 @@ h4 {
 .iphone {
   /* position: relative; */
 }
+
 .iphone img {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   width: 250px;
   height: auto;
 }
 
 .iphone video {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   width: 250px;
   height: auto;
-  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
-  0 5px 15px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
 }
 
 #our_brands {
-  background: rgba(37,55,103,.15);
+  background: rgba(37, 55, 103, .15);
   background-image: url('../img/andrew-neel-369701-unsplash.jpg');
   background-blend-mode: overlay;
   background-size: cover;
@@ -312,45 +377,47 @@ h4 {
 }
 
 #features {
-	text-align: center;
+  text-align: center;
 }
 
 
 /*typographic*/
 body {
-    color: #363c41;
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 1.6;
+  color: #363c41;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
-h3 { font-weight: 300; }
+h3 {
+  font-weight: 300;
+}
 
 @media (min-width:601px) and (max-width: 1000px) {
 
-    /*tablet*/
-    #hero {}
+  /*tablet*/
+  #hero {}
 
-    /*adjust for tablet*/
-    h2 {}
+  /*adjust for tablet*/
+  h2 {}
 
-    /*text for hero image*/
+  /*text for hero image*/
 
 }
 
 @media (max-width: 600px) {
 
-    /*large phone*/
-    #hero {}
+  /*large phone*/
+  #hero {}
 
-    /*adjust for tablet*/
-    h2 {}
+  /*adjust for tablet*/
+  h2 {}
 
-    /*text for hero image*/
+  /*text for hero image*/
 }
 
 
 
 @media (max-width: 400px) {
-    /*small phone*/
+  /*small phone*/
 }
