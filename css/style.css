@@ -1,30 +1,17 @@
 @charset "UTF-8";
 
-/* Temporary width of all images so they aren't huge */
 img {
   width: 100%;
   height: auto;
 }
 
-/* Temporary background colors to help visualize where each section starts and ends */
-/* #header { background: powderblue; } */
-/* #hero { background: lightblue; } */
-#our_styles {
-  background: lightskyblue;
-}
-
-/* #how_it_works { background: lightsteelblue; } */
-/* #our_brands { background: cornflowerblue; } */
-/* #testimonials { background: lightskyblue; } */
-#sign_up_cta {
-  background: lightblue;
-}
-
-/* #footer { background: powderblue; } */
-
-/* Setting the font for the whole site here */
 body {
   font-family: eb-garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+}
+
+.v_space {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 /* ///////////////////////////////////////////////////////// */
@@ -64,7 +51,6 @@ body {
   text-transform: uppercase;
   letter-spacing: .5px;
   color: white;
-  /* border-bottom: 2px solid white; */
   transition: all .10s ease;
 }
 
@@ -78,8 +64,184 @@ body {
   padding-right: 2rem;
 }
 
-/* END NAVIGATION */
 /* ///////////////////////////////////////////////////////// */
+/* HERO */
+
+#hero {
+  background: rgba(37, 55, 103, .25);
+  background-image: url('../img/hero_1671.jpg');
+  background-blend-mode: overlay;
+  background-size: cover;
+  padding-top: 20rem;
+}
+
+#hero_left {
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero_copy {
+  margin-bottom: 8rem;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+#hero button {
+width: 225px;
+}
+
+#hero img,
+#footer img {
+  max-width: 150px;
+}
+
+.appstores {
+  text-align: center;
+}
+
+.appstores img {
+  padding: .5rem;
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* HOW IT WORKS */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 250px;
+  padding: 3rem;
+  background: white;
+  border-radius: .5rem;
+  margin: 0 1rem;
+  margin-bottom: 3rem;
+  max-width: 400px;
+}
+
+.card img {
+  max-width: 250px;
+}
+
+#how_it_works .container {
+  padding: 0 3rem;
+}
+
+#how_it_works .container .row {
+  display: flex;
+  justify-content: center;
+}
+
+#how_it_works .card {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+#how_it_works p {
+  font-size: 2rem;
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* INSPO #1 */
+
+#our_brands {
+  background: rgba(37, 55, 103, .15);
+  background-image: url('../img/andrew-neel-369701-unsplash.jpg');
+  background-blend-mode: overlay;
+  background-size: cover;
+  color: white;
+  justify-content: center;
+  font-style: italic;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* FEATURES */
+
+#featurethis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#fadiman {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.iphone video {
+  width: 250px;
+  height: auto;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* INSPO #2 */
+
+#crap {
+  background: rgba(37, 55, 103, .15);
+  background-image: url('../img/alexander-andrews-290794-unsplash.jpg');
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: top;
+  color: white;
+  justify-content: center;
+  font-style: italic;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* TESTIMONIALS */
+
+#testimonials .container .row {
+ display: flex;
+ justify-content: center;
+}
+
+#testimonials .card {
+  min-width: 300px;
+}
+
+#testimonials .card img {
+  max-width: 180px;
+}
+
+#testimonials .card:nth-of-type(1) img {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+#testimonials .card:nth-of-type(2) img {
+  border-radius: 63% 37% 51% 49% / 48% 71% 29% 52%;
+}
+
+#testimonials .card:nth-of-type(3) img {
+  border-radius: 32% 68% 69% 31% / 28% 49% 51% 72%;
+}
+
+.testimonial blockquote {
+  border: none;
+  background: none;
+  margin-top: 1rem;
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* CTA */
+
+#sign_up_cta {
+  flex-direction: column;
+  justify-content: center;
+  background: lightblue;
+  text-align: center;
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* FOOTER */
 
 #footer {
   display: flex;
@@ -112,50 +274,14 @@ body {
   margin-bottom: 4rem;
 }
 
-#hero {
-  background:
-    rgba(37, 55, 103, .25);
-  /* linear-gradient(
-      to bottom,
-      rgba(37,55,103,0),
-      rgba(37,55,103,1) 30%); */
-  background-image: url('../img/hero_1671.jpg');
-  background-blend-mode: overlay;
-  background-size: cover;
-  padding-top: 20rem;
-}
+/* ///////////////////////////////////////////////////////// */
+/* TYPOGRAPHICS */
 
-#hero img,
-#footer img {
-  max-width: 150px;
-}
-
-#hero_left {
-  flex-direction: column;
-  justify-content: center;
-}
-
-#hero_copy {
-  margin-bottom: 8rem;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-}
-
-#hero button {
-width: 225px;
-}
-
-#featurethis {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#featurethis p {
-  font-size: 25px;
-  margin-top: 2rem;
-
-
+body {
+  color: #363c41;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 #hero_copy h2,
@@ -171,66 +297,60 @@ width: 225px;
   margin-bottom: 2rem;
 }
 
-.appstores {
-  text-align: center;
+#featurethis p {
+  font-size: 25px;
+  margin-top: 2rem;
 }
 
-.appstores img {
-  padding: .5rem;
-}
-
-.v_space {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 1 250px;
-  padding: 3rem;
-  background: white;
-  border-radius: .5rem;
-  ;
-  margin: 0 1rem;
-  min-height: 400px;
+#how_it_works h3,
+#testimonials h3,
+#features h3 {
+  display: inline-block;
+  border-bottom: 3px solid #253767;
+  margin-top: -3rem;
   margin-bottom: 3rem;
 }
 
-.card img {
-  max-width: 250px;
+h3 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 300;
 }
 
-#testimonials .card img {
-  max-width: 180px;
+h4 {
+  font-family: gill-sans-nova, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding: 2rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-#testimonials .card:nth-of-type(1) img {
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+.testimonial h5,
+.testimonial h6 {
+  font-family: gill-sans-nova, sans-serif;
 }
 
-#testimonials .card:nth-of-type(2) img {
-  border-radius: 63% 37% 51% 49% / 48% 71% 29% 52%;
+.testimonial h5 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
-#testimonials .card:nth-of-type(3) img {
-  border-radius: 32% 68% 69% 31% / 28% 49% 51% 72%;
+.testimonial h6 {
+  font-size: 1.4 rem;
+  color: rgba(0, 0, 0, .5);
 }
 
-.testimonial blockquote {
-  border: none;
-  background: none;
-}
-
-#sign_up_cta {
+#how_it_works,
+#testimonials,
+#features {
   text-align: center;
 }
 
-#sign_up_cta {
-  flex-direction: column;
-  justify-content: center;
-}
+/* ///////////////////////////////////////////////////////// */
+/* FORM */
 
 form {
   display: flex;
@@ -269,155 +389,40 @@ button i {
   padding-right: .5rem;
 }
 
-.testimonial h5,
-.testimonial h6 {
-  font-family: gill-sans-nova, sans-serif;
-}
-
-.testimonial h5 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
-.testimonial h6 {
-  font-size: 1.4 rem;
-  color: rgba(0, 0, 0, .5);
-}
-
-h3 {
-  font-size: 4rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-weight: 600;
-}
-
-#crap {
-  background: rgba(37, 55, 103, .15);
-  background-image: url('../img/alexander-andrews-290794-unsplash.jpg');
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-position: top;
-  color: white;
-  justify-content: center;
-  font-style: italic;
-}
-
-h4 {
-  font-family: gill-sans-nova, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  padding: 2rem;
-  padding-top: 2.5rem;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-#fadiman img {
-  width: 70%;
-
-}
-
-#how_it_works,
-#testimonials {
-  text-align: center;
-}
-
-#how_it_works .container {
-  padding: 0 3rem;
-}
-
-#how_it_works .card {
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-    0 5px 15px 0 rgba(0, 0, 0, 0.08);
-}
-
-#how_it_works h3,
-#testimonials h3,
-#features h3 {
-  display: inline-block;
-  border-bottom: 3px solid #253767;
-  margin-top: -3rem;
-  margin-bottom: 3rem;
-}
-
-#how_it_works p {
-  font-size: 2rem;
-}
-
-#fadiman {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.iphone {
-  /* position: relative; */
-}
-
-.iphone img {
-  width: 250px;
-  height: auto;
-}
-
-.iphone video {
-  width: 250px;
-  height: auto;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-    0 5px 15px 0 rgba(0, 0, 0, 0.08);
-}
-
-#our_brands {
-  background: rgba(37, 55, 103, .15);
-  background-image: url('../img/andrew-neel-369701-unsplash.jpg');
-  background-blend-mode: overlay;
-  background-size: cover;
-  color: white;
-  justify-content: center;
-  font-style: italic;
-}
-
-#features {
-  text-align: center;
-}
-
-
-/*typographic*/
-body {
-  color: #363c41;
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-h3 {
-  font-weight: 300;
-}
+/* ///////////////////////////////////////////////////////// */
+/* MEDIA QUERIES */
 
 @media (min-width:601px) and (max-width: 1000px) {
-
-  /*tablet*/
-  #hero {}
-
-  /*adjust for tablet*/
-  h2 {}
-
-  /*text for hero image*/
-
+  body {
+    /* background: red; */
+  }
 }
 
 @media (max-width: 600px) {
-
-  /*large phone*/
-  #hero {}
-
-  /*adjust for tablet*/
-  h2 {}
-
-  /*text for hero image*/
+  body {
+    /* background: green; */
+  }
+  #featurethis {
+    margin-bottom: 3rem;
+  }
+  #how_it_works .card {
+    margin: 2rem 0;
+  }
 }
 
-
-
 @media (max-width: 400px) {
-  /*small phone*/
+  #nav {
+    padding-left: 3rem;
+    text-align: center;
+  }
+  #nav li:not(:last-child) {
+    padding-right: 0;
+  }
+  #testimonials .card {
+    margin: 0;
+  }
+  #our_brands h3,
+  #crap h3 {
+    padding: 0 1.5rem;
+  }
 }
