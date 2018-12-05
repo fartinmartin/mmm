@@ -462,7 +462,7 @@ button i {
 }
 
 .card2:nth-of-type(2) .img {
-  background-image: url("../img/annie-spratt-130809-unsplash_web.jpg");
+  background-image: url("../img/nordwood-themes-162465-unsplash_web.jpg");
 }
 
 .card2:nth-of-type(3) .img {
@@ -475,6 +475,7 @@ button i {
   background-size: cover;
   background-position: center;
   height: 300px;
+  border-bottom: 1px solid #eee;
 }
 
 .card2 .info {
